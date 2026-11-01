@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --brand-black: #080907;
+    --brand-olive: #52650B;
+    --brand-forest: #34451C;
+    --brand-orange: #B96829;
+    --brand-ivory: #F8F5EE;
+    --brand-beige: #E9DFC9;
+    --brand-charcoal: #242522;
+  }
+
+  html.dark {
+    --brand-ivory: #080907;
+    --brand-charcoal: #E9DFC9;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--brand-ivory);
+    color: var(--brand-charcoal);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Safari utility classes */
+.bg-safari-black {
+  background-color: #080907;
+}
+
+.bg-safari-olive {
+  background-color: #52650B;
+}
+
+.bg-safari-forest {
+  background-color: #34451C;
+}
+
+.bg-safari-orange {
+  background-color: #B96829;
+}
+
+.bg-safari-ivory {
+  background-color: #F8F5EE;
+}
+
+.bg-safari-beige {
+  background-color: #E9DFC9;
+}
+
+.bg-safari-charcoal {
+  background-color: #242522;
+}
+
+.text-safari-black {
+  color: #080907;
+}
+
+.text-safari-olive {
+  color: #52650B;
+}
+
+.text-safari-orange {
+  color: #B96829;
+}
+
+.text-safari-beige {
+  color: #E9DFC9;
+}
+
+.text-safari-ivory {
+  color: #F8F5EE;
+}
+
+.border-safari-olive {
+  border-color: #52650B;
+}
+
+.border-safari-orange {
+  border-color: #B96829;
+}
+
+.border-safari-beige {
+  border-color: #E9DFC9;
+}
+
+/* Smooth transitions */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for gallery and trays */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F5EE;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #080907;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #52650B;
+  border-radius: 3px;
+}

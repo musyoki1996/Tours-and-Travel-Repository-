@@ -1,0 +1,6 @@
+{
+  "name": "Twiga Trails Safaris - Your Travel Buddies",
+  "description": "Premier African safari experiences, luxury wildlife tours, and bespoke holiday packages across Kenya, Tanzania, and East Africa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
